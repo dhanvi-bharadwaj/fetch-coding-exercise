@@ -19,12 +19,13 @@ We expect your code to:
 For example, if you are using Python (you don’t have to use Python) to spend 5000 points, it would look like this:
 python3 mycode.py 5000 transactions.csv
 2. Your code will ingest a CSV file with an example sequence.
-● "payer","points","timestamp"
-● "DANNON",1000,"2020-11-02T14:00:00Z"
-● "UNILEVER",200,"2020-10-31T11:00:00Z"
-● "DANNON",-200,"2020-10-31T15:00:00Z"
-● "MILLER COORS",10000,"2020-11-01T14:00:00Z"
-● "DANNON",300,"2020-10-31T10:00:00Z"
+- "payer","points","timestamp"
+- "DANNON",1000,"2020-11-02T14:00:00Z"
+- "UNILEVER",200,"2020-10-31T11:00:00Z"
+- "DANNON",-200,"2020-10-31T15:00:00Z"
+- "MILLER COORS",10000,"2020-11-01T14:00:00Z"
+- "DANNON",300,"2020-10-31T10:00:00Z"
+
 3. After the points are spent, the output should return the following results:
 {
 "DANNON": 1000,
