@@ -8,4 +8,10 @@
 
 
 2. What are the advantages and disadvantages of your solution?
+- One of the main advantages of my solution is that the use of the pandas library allows for efficient handling of large datasets and easy data manipulation. The pandas library can efficiently read the CSV file and convert it into a dataframe. Dataframes are powerful objects that allow us to perform analtical operations and transformations instantly. Hence, if transactions.csv contained 10000 rows, this program would still run effeciently. 
+
+
+
+
+
 3. What has been a favorite school/personal project thus far? What about it that challenged you?
