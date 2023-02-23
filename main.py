@@ -35,7 +35,7 @@ def balances(spending_points,filename):
     points = df.groupby("payer",sort=False).sum().to_dict()['points']
     # Calculating total points available in user's account
     total_points = sum(points.values())
-    total_copy = points.copy()
+    balances = points.copy()
 
     # Iterating over the transactions to spend the oldest points first
     for i in range(len(df)):
@@ -49,12 +49,12 @@ def balances(spending_points,filename):
             payer = (df.iloc[i])['payer']
             points_per_payer = (df.iloc[i])['points']
             if spending_points<points_per_payer:
-                total_copy[payer] = total_copy[payer]-spending_points
-                return total_copy
-            total_copy[payer] -= points_per_payer
+                balances[payer] = balances[payer]-spending_points
+                return balances
+            balances[payer] -= points_per_payer
             spending_points -= points_per_payer
             if spending_points==0:
-                return total_copy
+                return balances
         else: 
             # Returning an error message if the user is trying to spend more points than they have
             return {"Error": f"You are trying to spend {spending_points} points which is not possible. " \
