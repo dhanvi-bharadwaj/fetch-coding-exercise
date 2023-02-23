@@ -8,10 +8,8 @@
 
 
 2. What are the advantages and disadvantages of your solution?
-- One of the main advantages of my solution is that the use of the pandas library allows for efficient handling of large datasets and easy data manipulation. The pandas library can efficiently read the CSV file and convert it into a dataframe. Dataframes are powerful objects that allow us to perform analtical operations and transformations instantly. Hence, if transactions.csv contained 10000 rows, this program would still run effeciently. 
+- One of the main advantages of my solution is that the use of the pandas library allows for efficient handling of large datasets and easy data manipulation. The pandas library can efficiently read the CSV file and convert it into a dataframe. Dataframes are powerful objects that allow us to perform analtical operations and transformations almost instantly. Hence, if transactions.csv contained 10000 rows, this program would still run effeciently. My solutions also handles error cases well and provides informative error messages to the user. My solution also contains well documented code with comments and sensible variable names, so it can be used by another user.
 
-
-
-
+To improve the modularity and reusability of my code, I can break down the balances function into smaller, more focused functions, each responsible for a specific task, such as reading the CSV file, calculating the point balances, and spending the points. This would also make it easier to write unit tests for each function and debug any issues.
 
 3. What has been a favorite school/personal project thus far? What about it that challenged you?
