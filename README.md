@@ -34,3 +34,13 @@ For example, if you are using Python (you don’t have to use Python) to spend 5
 "UNILEVER": 0,
 "MILLER COORS": 5300
 }
+
+
+# Assignment #2 (summary.txt)
+
+Please answer the following questions and paste your answers into a file called summary.txt. This file should be located in the same repository
+as your code.
+1. Why did you choose the tools, libraries, and language you used for the coding exercise?
+2. What are the advantages and disadvantages of your solution?
+3. What has been a favorite school/personal project thus far? What about it that challenged you?
+
