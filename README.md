@@ -1,4 +1,4 @@
-# Assignment 1 (main.py file)
+# Assignment #1 (main.py file)
 ## Background
 Our users have points in their accounts. Users only see a single balance in their account. But for reporting purposes, we actually track their
 points per payer. In our system, each transaction record contains: payer (string), points (integer), timestamp (date).
