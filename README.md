@@ -36,7 +36,7 @@ For example, if you are using Python (you don’t have to use Python) to spend 5
 }
 
 
-# Assignment #2 (summary.txt)
+# Assignment #2 (summary.txt file)
 
 Please answer the following questions and paste your answers into a file called summary.txt. This file should be located in the same repository
 as your code.
