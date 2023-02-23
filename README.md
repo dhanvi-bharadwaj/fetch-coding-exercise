@@ -18,7 +18,7 @@ We expect your code to:
 1. When you run your program, you will pass in 2 arguments, 1) which is the amount of points to spend 2) name of CSV file
 For example, if you are using Python (you don’t have to use Python) to spend 5000 points, it would look like this: 
 
-```python3 mycode.py 5000 transactions.csv```
+```python3 main.py 5000 transactions.csv```
 
 2. Your code will ingest a CSV file with an example sequence.
 - "payer","points","timestamp"
