@@ -6,7 +6,7 @@ import pandas as pd
 
 def balances(spending_points,filename):
     """
-    Caulates the payer point balances for a user.
+    Calculates the payer point balances for a user.
 
     Parameters:
     - spending_points: the total number of points the user wants to spend (integer)
@@ -27,12 +27,10 @@ def balances(spending_points,filename):
 
     # Converting the transaction data from the CSV file into dataframe
     df=pd.read_csv(filename) 
-    # Converting the timestamp column to a datetime object
     df['timestamp'] = pd.to_datetime(df['timestamp'])
     # Sorting the transactions by their timestamp in ascending order
     df=df.sort_values('timestamp', ascending=True).reset_index(drop=True)
 
-    # Calculating the total number of points for each payer the user's account
     # Grouping the dataframe by payer and calculating total points available per payer
     points = df.groupby("payer",sort=False).sum().to_dict()['points']
     # Calculating total points available in user's account
@@ -50,7 +48,6 @@ def balances(spending_points,filename):
             # Spending the points for each payer
             payer = (df.iloc[i])['payer']
             points_per_payer = (df.iloc[i])['points']
-
             if spending_points<points_per_payer:
                 total_copy[payer] = total_copy[payer]-spending_points
                 return total_copy
