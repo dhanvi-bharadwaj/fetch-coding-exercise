@@ -1,4 +1,4 @@
-# fetch-coding-exercise
+#Background
 Our users have points in their accounts. Users only see a single balance in their account. But for reporting purposes, we actually track their
 points per payer. In our system, each transaction record contains: payer (string), points (integer), timestamp (date).
 For earning points, it is easy to assign a payer. We know which actions earned the points. And thus, which partner should be paying for the
